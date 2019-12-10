@@ -13,11 +13,11 @@ class PagesController extends LNController {
 
 	public function language() {
 		$this->setLanguage($this->getLanguage());
-		return redirect(route('test', ['lang' => $this->getLanguage()]));
+		return redirect(route('index', ['lang' => $this->getLanguage()]));
 	}
 
 	public function index() {
-		$this->view = 'test';
+		$this->view = 'index';
 		return view($this->getView());
 	}
 }

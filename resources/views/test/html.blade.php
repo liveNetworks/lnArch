@@ -1,4 +1,5 @@
-
+@inject('playerService', 'App\Services\PlayerService')
+@inject('songService', 'App\Services\SongService')
 
 
 @extends('layout.ln')

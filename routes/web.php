@@ -26,11 +26,12 @@ Route::domain('{' . env('LANG_PARAM') . '}.localhost', ['where' => ['lang' => '[
 ->middleware(['language'])
 ->group(function() {
 
-	Route::get('/test', 'PagesController@index')->name('test');
+	Route::get('/', 'PagesController@index')->name('index');
 
-	Route::get('/', function() {
-		return redirect(route('test', ['lang' => app()->getLocale()]));
-	})->name('lang');
+	// Route::get('/', function() {
+	// 	return redirect(route('index', ['lang' => app()->getLocale()]));
+	// })->name('lang');
+
 });
 
 

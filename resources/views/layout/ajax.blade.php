@@ -1,6 +1,5 @@
-@php
-    header('X-LN-Title: '. View::getSection('title') . ' ' . env('APP_NAME'));
-@endphp
-
+<script type="javascript">
+	document.title = "@yield('title')"
+</script>
 @yield('content')
 @yield('javascript')

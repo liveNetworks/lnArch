@@ -2,9 +2,7 @@
 
 @extends('layout.ln')
 
-@section('title')
-	{{ $VMIndex->title }}
-@endsection
+@section('title', $VMIndex->title)
 
 @section('content')
 Testamo

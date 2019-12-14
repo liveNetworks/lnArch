@@ -1,5 +1,5 @@
 <script type="javascript">
-	document.title = "@yield('title')"
+	document.title = "@yield('title')";
 </script>
 @yield('content')
 @yield('javascript')
